@@ -11,6 +11,7 @@ struct Cli {
     zmax: i64,
     ymin: i64,
     ymax: i64,
+    #[arg(long, action = clap::ArgAction::SetTrue)]
     use_all_rotations: bool,
     formation_file: String,
 }
